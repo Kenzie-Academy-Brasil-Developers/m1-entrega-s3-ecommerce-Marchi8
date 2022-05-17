@@ -1,0 +1,304 @@
+body {
+    font-family: inter;
+}
+
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+    margin-top: -8px;
+}
+
+
+#head {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 160px;
+}
+
+
+#logo {
+    margin-left: 118px;
+    color: #292929;
+    font-style: bold;
+}
+
+
+#logo:hover {
+    cursor: pointer;
+    color: #2E245E;
+    font-size: 33px;
+}
+
+
+#menu:hover {
+    cursor: pointer;
+    color: #2E245E;
+    font-weight: bolder;
+}
+
+
+#container {
+    margin: 115px;
+    display: flex;
+}
+
+
+#produtos {
+    width: 100%;
+}
+
+
+#vitrine {
+    height: 838px;
+    width: 100%;
+    display: flex;
+}
+
+
+#itens {
+    width: 100%;
+    max-width: 1500px;
+    height: 838px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+#card {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    margin-top: 0px;
+    border: 2px solid #F5F5F5;
+    margin-left: 80px;
+}
+
+
+#imagem {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+img {
+    background-color: #F5F5F5;
+}
+
+
+#product-main {
+    padding: 20px 15px;
+    width: 266px;
+    height: 254px;
+    background: #FFFFFF;
+}
+
+
+#category {
+    background-color: #2E245E;
+    width: 73px;
+    height: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 0px;
+}
+
+
+#product-price {
+    color: #2E245E;
+}
+
+
+#add-cart {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    width: 150px;
+}
+
+#input {
+    margin-top: -70px;
+    margin-right: 40px;
+    display: flex;
+}
+
+
+#search {
+    width: 330px;
+    height: 50px;
+    padding-left: 10px;
+    background-color: #F5F5F5;
+    border: none;
+}
+
+
+#searchBtn {
+    background-color: #37268C;
+    color: white;
+    width: 100px;
+    height: 51.5px;
+    border: #37268C;
+    margin-left: 8px;
+    border-radius: 0px;
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+
+#titleCart {
+    background-color: #37268C;
+    width: 450px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: -350px;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#cart {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -15px;
+    width: 450px;
+    height: 400px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
+#image-cart {
+    margin-top: 40.5px;
+    background-color: #FFFFFF;
+    height: 92px;
+    width: 100px;
+    margin-left: 14px;
+}
+
+
+#cart-img {
+    margin-top: 12.5px;
+    margin-left: 0px;
+    width: 100px;
+    height: 67px;
+    background-color: #FFFFFF;
+}
+
+
+#cart-inf {
+    margin-top: -104px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#cart-title {
+    width: 100%;
+    margin-top: 18px;
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+
+#cart-price {
+    margin-left: 100px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #2E245E;
+}
+
+
+#remove-cart {
+    font-size: 14px;
+    color: #242424;
+    height: 22px;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+
+#total {
+    background: #292929;
+    color: white;
+    margin-top: 0px;
+    width: 450px;
+    height: 126px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+#quantidade {
+    margin-left: 10px;
+}
+
+
+#valor {
+    margin-left: 300px;
+}
+
+
+#max {
+    margin-left: 10px;
+}
+
+
+aside {
+    margin-right: 50px;
+}
+
+
+#card:hover {
+    border: 1px solid #7B61FF;
+    cursor: pointer;
+}
+
+
+#add-cart:hover {
+    color: #2E245E;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+#searchBtn:hover {
+    background-color: #2E245E;
+    cursor: pointer;
+}
+
+
+#remove-cart:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #37268C;
+}
