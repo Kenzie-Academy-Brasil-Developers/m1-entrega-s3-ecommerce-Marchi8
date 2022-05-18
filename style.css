@@ -38,7 +38,7 @@ header {
 }
 
 
-#menu:hover {
+.menu:hover {
     cursor: pointer;
     color: #2E245E;
     font-weight: bolder;
@@ -75,7 +75,7 @@ header {
     flex-wrap: wrap;
 }
 
-#card {
+.card {
     width: auto;
     display: flex;
     flex-direction: column;
@@ -135,6 +135,9 @@ img {
     font-size: 14px;
     line-height: 16px;
     width: 150px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #242424;
 }
 
 #input {
@@ -268,6 +271,11 @@ img {
 }
 
 
+#valorTotal {
+    margin-left: 300px;
+}
+
+
 #max {
     margin-left: 10px;
 }
@@ -278,7 +286,7 @@ aside {
 }
 
 
-#card:hover {
+.card:hover {
     border: 1px solid #7B61FF;
     cursor: pointer;
 }
@@ -301,4 +309,17 @@ aside {
     cursor: pointer;
     text-decoration: underline;
     color: #37268C;
+}
+
+#empty {
+    font-size: 22px;
+    margin-left: 130px;
+    margin-top: 150px;
+}
+
+
+#vazio{
+    font-size: 14px;
+    margin-left: 160px;
+    margin-top: 10px;
 }
