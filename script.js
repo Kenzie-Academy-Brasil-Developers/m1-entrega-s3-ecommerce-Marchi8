@@ -59,7 +59,7 @@ const itens = []
 
 const lista = document.getElementById("itens")
 
-function cards() {
+function cards(produtos) {
     for (let i = 0; i < produtos.length; i++) {
         const li = document.createElement("li")
         li.className = "card"
@@ -102,7 +102,7 @@ function cards() {
     }
 }
 
-cards()
+cards(produtos)
 
 lista.addEventListener("click", cartAdd)
 
@@ -125,7 +125,11 @@ function cartItens() {
     if (cart.length > 0) {
         document.getElementById("empty").style.display = "none"
         document.getElementById("vazio").style.display = "none"
+    } else {
+        document.getElementById("empty")
+        document.getElementById("vazio")
     }
+
 
     let quantidade = 0
     let valor = 0
@@ -176,29 +180,38 @@ function remover(event) {
 }
 sectionCart.addEventListener("click", remover)
 
-// const todos = document.getElementById("todos")
-// todos.addEventListener("click", (event) =>{
-//     event.preventDefault()
-//     cards()
-//     cartAdd("ALL")
-// })
-// const acessorios = document.getElementsByClassName("acessorios")[0]
-// acessorios.addEventListener("click", (event) => {
-//   event.preventDefault()
-//   filterTag("acessorios")
-//   addButtonFunction("Acs")
+
+const menu = document.getElementById("head")
+console.log(menu)
+
+const all = document.getElementsByClassName("all")[0]
+const accessories = document.getElementsByClassName("accessories")[0]
+const shoes = document.getElementsByClassName("shoes")[0]
+const shirts = document.getElementsByClassName("shirts")[0]
+
+all.addEventListener("click", () => {
+    lista.innerHTML = ""
+    cards(produtos)
+})
+
+
+// accessories.addEventListener("click", () => {
+//     lista.innerHTML = ""
+//     for (let i = 0; i < produtos.length; i++) {
+//         if (produtos[i]["category"] === produtos[1]["category"]) {
+//             cards(produtos)
+//         }
+//     }
 // })
 
-// const calcados = document.getElementsByClassName("calcados")[0]
-// calcados.addEventListener("click", (event) => {
-//   event.preventDefault()
-//   filterTag("calcados")
-//   addButtonFunction("Shoe")
+
+// shoes.addEventListener("click", () => {
+//     lista.innerHTML = ""
+    
 // })
 
-// const camisetas = document.getElementsByClassName("camisetas")[0]
-// camisetas.addEventListener("click", (event) => {
-//   event.preventDefault()
-//   filterTag("camisetas")
-//   addButtonFunction("Shirt")
+// shirts.addEventListener("click", () => {
+//     lista.innerHTML = ""
+    
 // })
+

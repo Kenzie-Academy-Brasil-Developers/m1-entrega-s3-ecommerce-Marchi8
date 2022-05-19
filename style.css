@@ -38,7 +38,7 @@ header {
 }
 
 
-.menu:hover {
+#menu:hover {
     cursor: pointer;
     color: #2E245E;
     font-weight: bolder;
